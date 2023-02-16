@@ -1,6 +1,7 @@
 // Récupération des pièces depuis le fichier JSON
 const reponse = await fetch('pieces-autos.json');
 const pieces = await reponse.json();
+
 // Création des balises 
 const article = pieces[0];
 const imageElement = document.createElement("img");
@@ -10,7 +11,8 @@ nomElement.innerText = article.nom;
 const prixElement = document.createElement("p");
 prixElement.innerText = `Prix: ${article.prix} € (${article.prix < 35 ? "€" : "€€€"})`;
 const categorieElement = document.createElement("p");
-categorieElement.innerText = article.categorie ?? "(aucune catégorie)";
+categorieElement.innerText = article.categorie ?? "(aucune catégorie)"; // ?? est l'opérateur "nullish" qui défini l'action si la variable est null ou undefined
+
 //Rattachement de nos balises au DOM
 const sectionFiches = document.querySelector(".fiches");
 sectionFiches.appendChild(imageElement);
