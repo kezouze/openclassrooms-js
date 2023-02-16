@@ -19,3 +19,5 @@ sectionFiches.appendChild(imageElement);
 sectionFiches.appendChild(nomElement);
 sectionFiches.appendChild(prixElement);
 sectionFiches.appendChild(categorieElement);
+
+// bonjour je m'appelle jean-pierre 
