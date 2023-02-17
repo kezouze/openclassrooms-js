@@ -34,3 +34,4 @@ for (let i = 0; i < pieces.length; i++) {
     pieceElement.appendChild(descriptionElement);
     pieceElement.appendChild(stockElement);
  }
+ //bonjour je suis un commentaire 
